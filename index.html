@@ -1,0 +1,15 @@
+<!doctype html><html><head><title>AB-proto</title><meta charset="utf-8"><script>function genTokenData(projectNum)
+      {
+          let data = {};
+          let hash = "0x";
+          for (var i = 0; i < 64; i++)
+          {
+              hash += Math.floor(Math.random() * 16).toString(16);
+          }
+          console.log(hash)
+          // hash = "0x2X5b688b68ab4JdChAS004083a343exe593f3xxx1444c7b4BC056c3b1dc91590";
+          data.hash = hash;
+          data.tokenId = (projectNum * 1000000 + Math.floor(Math.random() * 1000)).toString();
+          return data;
+      }
+      let tokenData = genTokenData(2);</script><link rel="stylesheet" href="./style.css"></head><body><script defer="defer" src="./bundle.js"></script></body></html>
