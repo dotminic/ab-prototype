@@ -6,8 +6,14 @@
           {
               hash += Math.floor(Math.random() * 16).toString(16);
           }
-          console.log(hash)
-          // hash = "0x2X5b688b68ab4JdChAS004083a343exe593f3xxx1444c7b4BC056c3b1dc91590";
+
+          // hash = "0xf0e6297939ec90fd723d269092f768f80e376a0c998b87e5c428ae441ec7e8be";
+          let diff = Math.max(66 - hash.length, 0);
+          for (let i = 0; i < diff; i++)
+            hash += Math.floor(Math.random() * 16).toString(16);
+          console.log(hash);
+          console.log(hash.length);
+
           data.hash = hash;
           data.tokenId = (projectNum * 1000000 + Math.floor(Math.random() * 1000)).toString();
           return data;
