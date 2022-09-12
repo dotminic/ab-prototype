@@ -7,10 +7,19 @@
               hash += Math.floor(Math.random() * 16).toString(16);
           }
 
-          // hash = "0xf0e6297939ec90fd723d269092f768f80e376a0c998b87e5c428ae441ec7e8be";
-          let diff = Math.max(66 - hash.length, 0);
-          for (let i = 0; i < diff; i++)
-            hash += Math.floor(Math.random() * 16).toString(16);
+          // DO NOT DELETE
+          // hash = "0x9e7e007d0d07a4194844c19dc42f3d11efa5f48985e4f0e944549452dffcb234";
+
+
+
+
+
+          // let buff = hash.substring(2, hash.length);
+          // let diff = Math.max(66 - hash.length, 0);
+          // for (let i = 0; i < diff; i++)
+          //   hash += buff[i % buff.length];// bucket[i];//String.fromCharCode(48 + i + 1);
+
+            //hash += Math.floor(Math.random() * 16).toString(16);
           console.log(hash);
           console.log(hash.length);
 
